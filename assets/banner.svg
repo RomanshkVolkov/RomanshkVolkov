@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">RomanshkVolkov — Backend · Infraestructura · Seguridad</title>
+  <desc id="desc">Banner de G-Studio con una terminal que despliega el stack: Go, Rust, gRPC, Kubernetes, Docker Swarm, Traefik, WAF y zero-trust.</desc>
+
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#e4e4ea" opacity="0.06"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.12" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#20d9e8" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#20d9e8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.95" cy="1" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20d9e8"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="1200" height="320" rx="16"/>
+    </clipPath>
+    <clipPath id="typing">
+      <rect class="type" x="696" y="98" width="0" height="28"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .name { font-size: 52px; font-weight: 800; fill: #e4e4ea; letter-spacing: -1px; }
+    .tag { font-size: 21px; font-weight: 600; fill: url(#accent); }
+    .label { font-size: 14px; font-weight: 600; fill: #34d399; letter-spacing: 3px; }
+    .muted { font-size: 17px; fill: #9a9aa4; }
+    .link { font-size: 17px; fill: #20d9e8; font-weight: 600; }
+    .term { font-size: 16px; fill: #e4e4ea; }
+    .dim { fill: #9a9aa4; }
+    .ok { fill: #34d399; }
+    .cy { fill: #20d9e8; }
+    .amb { fill: #fbbf24; }
+
+    .type { animation: type 1.4s steps(19, end) 0.5s forwards; }
+    .line { opacity: 0; animation: in 0.4s ease-out forwards; }
+    .l1 { animation-delay: 2.1s; }
+    .l2 { animation-delay: 2.6s; }
+    .l3 { animation-delay: 3.1s; }
+    .l4 { animation-delay: 3.7s; }
+    .cursor { animation: blink 1s steps(1, end) infinite; }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    .rise { opacity: 0; animation: in 0.6s ease-out forwards; }
+    .r1 { animation-delay: 0.1s; }
+    .r2 { animation-delay: 0.3s; }
+    .r3 { animation-delay: 0.5s; }
+    .r4 { animation-delay: 0.7s; }
+
+    @keyframes type { to { width: 200px; } }
+    @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 50% { opacity: 0.35; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .type { animation: none; width: 200px; }
+      .line, .rise { animation: none; opacity: 1; }
+      .cursor, .pulse { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="#101013"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+    <rect width="1200" height="320" fill="url(#glow2)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="16" fill="none" stroke="#26262e"/>
+
+  <!-- Izquierda: identidad -->
+  <text class="label rise r1" x="64" y="92">// G-STUDIO</text>
+  <text class="name rise r2" x="62" y="158">RomanshkVolkov</text>
+  <text class="tag rise r3" x="64" y="200">Backend · Infraestructura · Seguridad</text>
+  <g class="rise r4">
+    <text class="muted" x="64" y="250">Querétaro, MX  ·  desde 2022</text>
+    <text class="link" x="64" y="278">→ guz-studio.dev</text>
+  </g>
+
+  <!-- Derecha: terminal -->
+  <g>
+    <rect x="660" y="44" width="480" height="232" rx="10" fill="#16161b" stroke="#26262e"/>
+    <path d="M660 54 a10 10 0 0 1 10 -10 h460 a10 10 0 0 1 10 10 v20 h-480 z" fill="#1c1c22"/>
+    <circle cx="682" cy="59" r="5" fill="#ff5f57"/>
+    <circle cx="700" cy="59" r="5" fill="#febc2e"/>
+    <circle cx="718" cy="59" r="5" fill="#28c840"/>
+    <text class="term dim" x="900" y="64" text-anchor="middle" font-size="13">rv@guz-studio: ~</text>
+
+    <text class="term cy" x="680" y="118">$</text>
+    <g clip-path="url(#typing)">
+      <text class="term" x="696" y="118">deploy --stack prod</text>
+    </g>
+
+    <g class="line l1">
+      <text class="term ok" x="680" y="154">✓</text>
+      <text class="term dim" x="700" y="154">api</text>
+      <text class="term" x="800" y="154">Go · Rust · gRPC</text>
+    </g>
+    <g class="line l2">
+      <text class="term ok" x="680" y="184">✓</text>
+      <text class="term dim" x="700" y="184">platform</text>
+      <text class="term" x="800" y="184">k8s · Swarm · Traefik</text>
+    </g>
+    <g class="line l3">
+      <text class="term ok" x="680" y="214">✓</text>
+      <text class="term dim" x="700" y="214">edge</text>
+      <text class="term" x="800" y="214">WAF · zero-trust</text>
+    </g>
+    <g class="line l4">
+      <circle class="pulse" cx="685" cy="245" r="4.5" fill="#34d399"/>
+      <text class="term ok" x="700" y="250">online</text>
+      <text class="term dim" x="770" y="250">en producción</text>
+      <rect class="cursor" x="908" y="236" width="9" height="18" fill="#20d9e8"/>
+    </g>
+  </g>
+</svg>
